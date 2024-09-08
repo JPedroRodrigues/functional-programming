@@ -66,7 +66,6 @@ Hello, World!
 
 > [!WARNING]
 > This is not a real warning. I'm just here to let you know that you can turn on warnings using the `-Wall` flag.
-
 > This will help you improve your code in some other ways.
 
 #### GHCI - The Interactive Environment
