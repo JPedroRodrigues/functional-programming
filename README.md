@@ -15,6 +15,14 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager
 ```
 
 - Unix-like systems:
+
+Make sure you have installed the following libraries I'm going to show bellow. These are dependencies to get the GHCup running as it is suposed to be. For more details, check [here](https://www.haskell.org/ghcup/install/#system-requirements). In my case (Debian 12.7) I will install those dependencies
+
+```bash
+sudo apt update
+sudo apt install curl build-essential libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
+```
+
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
@@ -58,12 +66,34 @@ Hello, World!
 
 > [!WARNING]
 > This is not a real warning. I'm just here to let you know that you can turn on warnings using the `-Wall` flag.
->
+
 > This will help you improve your code in some other ways.
 
 #### GHCI - The Interactive Environment
 
-It's also called a **Read-Evaluate-Print Loop (REPL)**. It's pretty simple to use.
+It's also called a **Read-Evaluate-Print Loop (REPL)**. It's pretty simple to use and you can even create functions inside it.
 
 ```bash
 ghci
+GHCi, version 9.4.8: https://www.haskell.org/ghc/  :? for help
+```
+
+```bash
+ghci> double n = n * 2
+ghci> double 2
+4
+```
+
+Also, you can load your haskell files into your environment and run it using the `:load` or `:l` command.
+
+```haskell
+-- my fat.hs program
+fat 0 = 1
+fat n = n * fat(n - 1)
+```
+
+```bash
+ghci> :l fat.hs
+ghci> fat 3
+6
+```
