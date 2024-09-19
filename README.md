@@ -52,6 +52,12 @@ touch hello.hs && code hello.hs
 main = putStrLn "Hello, World!"
 ```
 
+Compile your code:
+
+```bash
+ghc hello.hs
+```
+
 Now, just run your program:
 
 ```bash
