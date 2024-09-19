@@ -32,9 +32,9 @@ Consider running those commands above in your terminal.
 ### 2. Getting Started
 
 > [!NOTE]
-> The original step-by-step guide can be easily find at the [ghcup website](https://www.haskell.org/ghcup/steps/). What I am writing here is just a little briefing. My main goal here is to make it simpler for you.
+> The original step-by-step guide can be easily find at the [ghcup website](https://www.haskell.org/ghcup/steps/). What I am writing here is just a little briefing of this text. My main goal here is to make it simpler for you.
 
-I'm assuming you are creating your files and studying in a Unix-like system, just in case you find here a cmd you are not used to.
+I'm creating files and studying in a Unix-like system, just in case you find here a cmd you are not used to.
 
 #### Compiling Programs with GHC
 
