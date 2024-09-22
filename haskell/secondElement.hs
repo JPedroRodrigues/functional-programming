@@ -1,2 +1,4 @@
-seg "" = ""
-seg  (a : b : xs) = b
+seg :: String -> String
+seg [] = ""
+seg [_] = "" 
+seg  (_:y:_) = [y]
