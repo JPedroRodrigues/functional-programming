@@ -4,7 +4,9 @@
 
 merge list1 [] = list1
 merge [] list2 = list2
-merge (a : xs) (b : ys) | a <= b = a : merge xs (b : ys) | otherwise = b : merge (a : xs) ys
+merge (a : xs) (b : ys) 
+    | a <= b = a : merge xs (b : ys) 
+    | otherwise = b : merge (a : xs) ys
 
 --------------------------------------------------------------------
 -- Split
