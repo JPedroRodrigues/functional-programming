@@ -6,7 +6,7 @@ Prolog é baseado na lógica de predicados de primeira ordem, **cláusulas de Ho
 
 --- 
 
-```pl
+```prolog
 a.              /* fato */
 b.              /* fato */
 c :- a, b.      /* c é verdadeiro se a e b forem verdadeiros = SE "a" e "b" ou "a" e "b" implicam em "c" */
@@ -30,7 +30,7 @@ d :- c.         /*  d é verdade SE "c" */
     - As variáveis devem iniciar com letra maiúscula;
     - Os predicados começam com linha minúscula;
 
-    ```pl
+    ```prolog
     /* Predicados de aridade 1 */
     casa(azul).
     casa(amarela).
@@ -40,8 +40,8 @@ d :- c.         /*  d é verdade SE "c" */
     M = azul?
     M = amarela?
     ```
-
 - **Lista**:
     - `[]`;
     - `[1, 1, 1]`;
     - `[1, a, [2, 2, 3]]`;
+
