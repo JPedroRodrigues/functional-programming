@@ -6,14 +6,14 @@ Prolog é baseado na lógica de predicados de primeira ordem, **cláusulas de Ho
 
 --- 
 
-```prolog
-a.              /* fato */
-b.              /* fato */
-c :- a, b.      /* c é verdadeiro se a e b forem verdadeiros = SE "a" e "b" ou "a" e "b" implicam em "c" */
-d :- e, f.      /* d SE "e" e "f" forem verdades */
-                            /* OU */
-d :- c.         /*  d é verdade SE "c" */
-```
+|   Exemplo   |   O que é   | Significado |
+|:-----------:|:-----------:|:-----------:|
+|a.           |fato         |     ---     |
+|b.           |fato         |     ---     |
+|c :- a, b.   |regra        |*c* é verdadeiro **se** *a* **e** *b* forem verdadeiros (*a* e *b* implicam *c*)| 
+|d :- e, f.   |regra        |*d* é verdadeiro **se** *e* **e** *f* forem verdadeiros (*e* e *f* implicam *d*)|
+|d :- c.      |regra        |*d* é verdadeiro  **se** *c* for verdadeiro|
+
 
 ## Conceitos-chave
 
